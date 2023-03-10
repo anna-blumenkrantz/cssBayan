@@ -26,25 +26,18 @@ html {
 
 .wrapper {
     max-width: 1222px;
-    background: #edf2f7;
+    background: #e5f0e5;
     margin: 0 auto;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding: 0 50px;
 }
 h1 {
-display: inline-block;
+    display: inline-block;
   font-size: 2em;
   margin: 0;
   margin-left: 25px;
 }
 img {
   border: 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 input {
@@ -57,8 +50,11 @@ input {
   /* margin: 10px; */
   /* border-radius: 5px; */
   overflow: hidden;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   /* box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5); */
 }
+
 .collapsible-item-label {
   display: flex;
   justify-content: space-between;
