@@ -26,13 +26,16 @@ html {
 
 .wrapper {
     max-width: 1222px;
-    background: #e5f0e5;
+    background: #efefda;
     margin: 0 auto;
     padding: 0 50px;
 }
+.header{
+    padding: 0 1em;
+    } 
 h1 {
     display: inline-block;
-  font-size: 2em;
+  font-size: 1em;
   margin: 0;
   margin-left: 25px;
 }
@@ -66,51 +69,44 @@ input {
 .collapsible-item-label:hover {
     color: blue;
 }
-.collapsible-item-label:hover::after {
+/* .collapsible-item-label:hover::after {
   display: block;
-}
+} */
 
-.collapsible-item-label::after {
+/* .collapsible-item-label::after {
   display: none;
-  content: "→";
+  content: "+";
   width: 1em;
   height: 1em;
   text-align: center;
   transition: all 0.35s;
-}
+} */
 .collapsible-item-content {
-text-align: center;
+    text-align: center;
   max-height: 0;
   padding: 0 1em;
   transition: all 0.35s;
 }
 
-input:checked + .collapsible-item-label::after {
-  transform: rotate(90deg);
-}
+/* input:checked + .collapsible-item-label::after {
+  transform: rotate(45deg);
+} */
 input:checked ~ .collapsible-item-content {
   max-height: 100vh;
   padding: 1em;
-}
-
-
-.collapsible-item-label i {
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  transition: all 0.35s;
-  font-weight: bold;
-  color: black;
-  font-size: 1rem;
 }
 
 input:checked + .collapsible-item-label i {
   transform: rotate(90deg);
 }
 
-.fa,
-.fa-solid {
+.icon {
+  text-align: center;
+  transition: all 0.35s;
   font-weight: bold;
   color: black;
   font-size: 1rem;
+  background-image: url("../assets/plus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
