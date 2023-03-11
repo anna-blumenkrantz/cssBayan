@@ -90,7 +90,7 @@ input:checked ~ .collapsible-item-content {
 
 input:checked + .collapsible-item-label .fa-plus {
   transform: rotate(45deg);
-  display: inline-block;
+  display: block;
 }
 
 .fa.fa {
